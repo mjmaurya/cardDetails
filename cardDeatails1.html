@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="cardDeatails1.css"/>
+</head>
+<body>
+
+<div class="flip-box container" >
+  <div class="flip-box-inner container">
+    <div class="flip-box-front container">
+        <p style=" font-size: large;">XXXX XXXX XXXX XXXX </p>
+        <p style="margin-top: 50px;"><span>MM/YY</span><span style="float: right;">CVV CODE <span style="background-color: cadetblue; border-radius: 50%; padding:0px 5px 0px 5px;" >?</span></span></p>
+        <p style="margin-top: 40px;">CARD HOLDER</p>
+    </div>
+    <div class="flip-box-back container">
+        <p  style=" font-size: large;"><span class="numbers"></span><span style="float: right;">VISA</span></p>
+        <p style="margin-top: 50px;"><span class="dates">MM/YY</span><span class="codes" style="float: right;">CVV CODE <span style="background-color: cadetblue; border-radius: 50%; padding:0px 5px 0px 5px;" >?</span></span></p>
+        <p class="name" style="margin-top: 40px;">CARD HOLDER</p>
+    </div>
+  </div>
+</div>
+<div class="container" style="text-align: center;">
+    <div class="row">
+        <div class="col-sm">
+            <p style="margin-top: 20px; font-size: large;">16-DIGIT CARD NUMBER </p>
+            <input class="inputto" type="text" pattern="\d*" maxlength="19" placeholder="Enter Card name">
+        </div>
+        <div class="col-sm">
+          <p style="margin-top: 20px; font-size: large;">EXPIRES DATE</p>
+            <input class="inputdate" type="text" pattern="\d*" maxlength="5" placeholder="EXPIRES DATE">
+          </div>
+      <div class="col-sm">
+        <p style="margin-top: 20px; font-size: large;">CVV CODE</p>
+        <input class="inputcvv" type="text" pattern="\d*" maxlength="3" placeholder="CVV Code">
+    </div>
+    <div class="col-sm">
+      <p style="margin-top: 20px; font-size: large;">CARD HOLDER</p>
+    <input class="inputname" type="text"  placeholder="Card Holder" value="Card Holder">
+  </div>
+    </div>
+</div>
+<script src="cardDeatails1.js">
+</script>
+</body>
+</html>
